@@ -1,0 +1,13 @@
+<h1>My Heros</h1>
+
+<ul class="list-group list-group-flush">
+    <li style="cursor:pointer" *ngFor="let hero of heroList ; let i = index" class="list-group-item d-flex col-sm ">
+
+        <div (click)="selectedHero = hero">
+            {{i + 10}} {{hero}}
+        </div>
+
+    </li>
+</ul>
+
+<p>My hero is {{selectedHero}}</p> 
